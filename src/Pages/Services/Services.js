@@ -5,7 +5,7 @@ import './Services.css';
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://howling-skeleton-40428.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
@@ -13,8 +13,9 @@ const Services = () => {
 
     return (
         <div className="mt-5 container">
-            <h2 className="text-success margin-top">WE OFFER THE BEST SERVICES</h2>
-            <h5 className="container">Dr. point healthcare systems take many forms, and access to healthcare varies across countries, municipalities, and individuals and is primarily influenced by economic and social factors.</h5>
+            <h1 className="text-success margin-top">YOU CAN TRAVEL WITH ME TO MANY PLACES IN THE WORLD.</h1>
+                <h5 className="container mb-4">
+                I travel to different parts of the world, you can be my travel companion if you want. It can be an experience and many colorful tours</h5>
             <div className="service-container">
                 {
                     services.map(service => <Service

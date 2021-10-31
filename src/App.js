@@ -14,6 +14,9 @@ import PrivetRout from './Pages/Login/PrivetRout/PrivetRout';
 import Blog from './Pages/Blog/Blog';
 import Soul from './Pages/Home/Soul/Soul';
 import BookingProcess from './Pages/Booking/BookingProcess/BookingProcess';
+import MyOrders from './Pages/Booking/MyOrders/MyOrders';
+import Contact from './Pages/Contact/Contact';
+import Message from './Pages/Message/Message';
 
 function App() {
   return (
@@ -46,6 +49,15 @@ function App() {
           <Route path="/blog">
           <Blog></Blog>
           <Trip></Trip>
+          </Route>
+          <Route path="/myOrder">
+            <MyOrders></MyOrders>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/message">
+            <Message></Message>
           </Route>
           <PrivetRout path="/places">
           <Services></Services>

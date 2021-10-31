@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Soul.css';
 
 const Soul = () => {
@@ -12,7 +13,7 @@ const Soul = () => {
                     <Card.Text className="soul-text">
                     Find a balance between career, travel, family and a life you love.
                     </Card.Text>
-                    <button className="button-2">INSPIRE ME</button>
+                    <Link to="/contact"><button className="button-2">INSPIRE ME</button></Link>
                 </Card.ImgOverlay>
             </Card>
         </div>

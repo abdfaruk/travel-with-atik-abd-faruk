@@ -1,0 +1,62 @@
+
+.partition{
+    height: 700px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+
+}
+
+.part-one{
+    width: 50%;
+    left: 0;
+    padding: 25px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+} .part-one img {
+    height: 100%;
+    width: 100%;
+}
+
+.part-two{
+    width: 50%;
+    right: 0;
+    padding: 25px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .part-one{
+        top: 0;
+    }
+    .partition{
+        height: 50%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .part-two{
+        top: 512px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .part-one{
+        top: 0;
+    }
+    .partition{
+        height: 50%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .part-two{
+        top: 240px;
+    }
+} 

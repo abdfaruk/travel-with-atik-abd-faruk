@@ -6,7 +6,7 @@ import './Trip.css';
 const Trip = () => {
     return (
         <div className="container mt-5">
-            <h1 className="text-success">It’s time to plan your next trip.</h1>
+            <h1 className="text-success">IT'S TIME TO PLAN YOUR NEXT TRIP.</h1>
             <h4>Take in the beauty of it all – wild rivers, scenic bikeways, mountain vistas, abundant farmlands – and show your love for the people who make this place so special.</h4>
             <div className="trip-section mt-5">
                 <div className="trip-img">

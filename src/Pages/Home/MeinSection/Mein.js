@@ -13,7 +13,7 @@ const Mein = () => {
             </div>
             <Soul></Soul>
             <div className="mb-5">
-                <h1 className="mb-3">CURATED CONTENT</h1>
+                <h2 className="mb-3">CURATED CONTENT</h2>
                 <CardGroup>
                     <Card>
                         <Card.Img className="card-image" src="https://live-production.wcms.abc-cdn.net.au/322b36b1e1f99ff89977c7cca19280b0?impolicy=wcms_crop_resize&cropH=1125&cropW=1998&xPos=1&yPos=0&width=862&height=485" />

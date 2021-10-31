@@ -1,15 +1,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import {Link, useHistory} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './BookingProcess.css';
 
 const BookingProcess = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const {user} = useAuth();
+    const history = useHistory();
   const onSubmit = data => {
     //   console.log(data)
     // getStoredCart e data joma hobe. er jonne page not found dekhasse.
-    fetch('http://localhost:5000/orders', {
+    fetch('https://howling-skeleton-40428.herokuapp.com/orders', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -18,7 +20,10 @@ const BookingProcess = () => {
     })
     .then(res => res.json())
     .then(result =>{
-        console.log(result)
+        if(result.insertedId){
+            history.push('/myOrder')
+        }
+
     })
 
 
