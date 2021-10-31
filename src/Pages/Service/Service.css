@@ -1,0 +1,14 @@
+.service{
+    background-color: rgb(226, 241, 241);
+    border-radius:20px ;
+}
+.service img{
+    height: 200px;
+    width: 100%;
+}
+.all-btn{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: rgb(135, 221, 23);
+    padding: 10px 25px;
+}

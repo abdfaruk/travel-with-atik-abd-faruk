@@ -1,0 +1,14 @@
+.soul-section-image{
+    height: 800px;
+}
+.soul-title{
+    font-size: 120px;
+    margin-top: 100px;
+    color: rgb(87, 87, 170);
+    font-family: 'Playfair Display', serif;
+}
+.soul-text{
+    font-size: 30px;
+    color: rgb(253, 147, 26);
+    font-family: 'Playfair Display', serif;
+}
