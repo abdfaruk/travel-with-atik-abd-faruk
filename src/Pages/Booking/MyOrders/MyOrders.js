@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 
 const MyOrders =()=> {
     const [order, setOrder] = useState([]);
-    useEffect( ()=>{
+    useEffect(()=>{
         fetch('https://howling-skeleton-40428.herokuapp.com/myOrder')
         .then(res => res.json())
         .then(result => setOrder(result))
