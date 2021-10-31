@@ -12,11 +12,11 @@ import AuthProvider from './context/AuthProvider';
 import Login from './Pages/Login/Login/Login';
 import PrivetRout from './Pages/Login/PrivetRout/PrivetRout';
 import Blog from './Pages/Blog/Blog';
-import Soul from './Pages/Home/Soul/Soul';
 import BookingProcess from './Pages/Booking/BookingProcess/BookingProcess';
 import MyOrders from './Pages/Booking/MyOrders/MyOrders';
 import Contact from './Pages/Contact/Contact';
 import Message from './Pages/Message/Message';
+import ServicesFixed from './Pages/ServicesFixed/ServicesFixed';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           <Home></Home>
           <Mein></Mein>
           <Services></Services>
+          <Blog></Blog>
           <WorkWithMe></WorkWithMe>
           <Trip></Trip>
           </Route>
@@ -36,6 +37,7 @@ function App() {
           <Home></Home>
           <Mein></Mein>
           <Services></Services>
+          <Blog></Blog>
           <WorkWithMe></WorkWithMe>
           <Trip></Trip>
           </Route>
@@ -50,18 +52,21 @@ function App() {
           <Blog></Blog>
           <Trip></Trip>
           </Route>
-          <Route path="/myOrder">
+          <PrivetRout path="/myOrder">
             <MyOrders></MyOrders>
-          </Route>
+          </PrivetRout>
           <Route path="/contact">
             <Contact></Contact>
           </Route>
           <Route path="/message">
             <Message></Message>
           </Route>
-          <PrivetRout path="/places">
-          <Services></Services>
+          <PrivetRout path="/servicesFixed">
+            <ServicesFixed></ServicesFixed>
           </PrivetRout>
+          <Route path="/places">
+          <Services></Services>
+          </Route>
           <PrivetRout path="/booking/:serviceId">
             <Booking></Booking>
           </PrivetRout>

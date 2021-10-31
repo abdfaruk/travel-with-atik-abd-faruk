@@ -1,3 +1,9 @@
 .color-test{
     color: rebeccapurple;
 }
+
+.blog-title{
+    margin-top: 50px;
+    color: rgb(68, 131, 6);
+    font-size: 60px;
+}

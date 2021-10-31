@@ -26,7 +26,7 @@ const Login = () => {
             </div>
             <div>
             <h2>Please Login</h2>
-            <button onClick={googleLogin} className="all-btn">Login With Google</button>
+            <button onClick={googleLogin} className="all-btn mb-5">Login With Google</button>
             </div>
         </div>
     );
