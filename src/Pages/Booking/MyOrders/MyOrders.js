@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 
-const MyOrders = () => {
+const MyOrders =()=> {
     const [order, setOrder] = useState([]);
     useEffect( ()=>{
         fetch('https://howling-skeleton-40428.herokuapp.com/myOrder')
